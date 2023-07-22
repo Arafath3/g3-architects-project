@@ -315,12 +315,57 @@ span {
 /* medium Devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
 
-    .facts-icons-container{
-       display: grid;
-       grid-template-columns: repeat(2,1fr);
-}
+    .facts-icons-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .facts-header {
         text-align: center;
     }
-    
+
+}
+
+/* Experience section */
+.features-title {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.features-container {
+    display: flex;
+    margin-top: 130px;
+}
+
+.feature-description {
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.card-title {
+    color: #131313;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-description {
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.feature-card {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px 35px;
+    margin-top: 25px;
+}
+
+.side-contain {
+    margin-right: 145px;
 }
