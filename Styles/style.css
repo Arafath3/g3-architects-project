@@ -327,10 +327,12 @@ span {
 }
 
 /* Experience section */
-/* .features-title {
+.features-title {
     color: #131313;
     font-size: 45px;
     font-weight: 700;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
 }
 
 .features-container {
@@ -368,14 +370,67 @@ span {
 
 .side-contain {
     margin-right: 145px;
-} */
+}
+
+.experience-bar {
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 342px;
+    padding: 45px 40px;
+    position: relative;
+    bottom: 130px;
+
+}
+
+.img-contain img {
+    height: 85%;
+    margin-left: 90px;
+}
+
+.text1 {
+    text-align: center;
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.text2 {
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
 
 /* Feature card responsive */
 /* small device */
-/* @media screen and (max-width: 576px) {} */
+@media screen and (max-width: 576px) {
+    .features-container {
+        flex-direction: column;
+
+    }
+
+    .img-contain img {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .experience-bar {
+        position: static;
+        max-width: 300px;
+    }
+
+    .side-contain {
+        align-items: center;
+        margin: 0px;
+    }
+}
 
 /* medium device */
-/* @media screen and (min-width: 576px) and (max-width: 960px) {} */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    .features-container {
+        flex-direction: column;
+
+    }
+}
 
 /* Sponsor section */
 .sponsor-title {
@@ -419,15 +474,26 @@ span {
 
 /* medium device */
 @media screen and (min-width: 576px) and (max-width: 960px) {
-    .sponsor-icon{
+    .sponsor-icon {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         margin-left: 100px;
     }
-    .medium-device{
+
+    .medium-device {
         margin-left: 110px;
         margin-top: 20px;
     }
 }
 
 /* Sponsor section */
+/* footer */
+footer {
+    border-radius: 8px;
+    background: #FFF4E7;
+    margin: 130px 240px 215px 240px;
+}
+.footer-text{
+    text-align: center;
+    padding: 40px 410px;
+}
