@@ -7,6 +7,7 @@
     margin: 0px;
     padding: 0px;
 }
+
 /* shared styles */
 .btn-primary {
     border-radius: 8px;
@@ -133,10 +134,11 @@ nav li a {
 }
 
 /* Main section starting */
-main{
+main {
     max-width: 1440px;
     margin: 0 auto;
 }
+
 /* First section */
 .main-section-container {
     display: flex;
@@ -177,6 +179,7 @@ span {
     font-weight: 400;
 
 }
+
 /* Feature section responsive */
 /* Small devices */
 @media screen and (max-width: 576px) {
@@ -195,15 +198,18 @@ span {
     nav {
         flex-direction: column;
     }
-    .main-section-container{
+
+    .main-section-container {
         flex-direction: column;
         text-align: center;
     }
-    .img-collage{
-        grid-template-columns: repeat(1,1fr);
+
+    .img-collage {
+        grid-template-columns: repeat(1, 1fr);
         margin-right: 0px;
     }
-    .main-title{
+
+    .main-title {
         margin-right: 0px;
         margin-top: 20px;
     }
@@ -228,14 +234,93 @@ span {
     nav {
         flex-direction: column;
     }
-    .main-section-container{
+
+    .main-section-container {
         flex-direction: column;
         text-align: center;
     }
-    .img-collage{
+
+    .img-collage {
         margin-right: 0px;
     }
-    .main-title{
+
+    .main-title {
         margin-right: 0px;
         margin-top: 20px;
     }
+}
+
+/* Facts section */
+.facts-title {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: 130px;
+}
+
+.facts-description {
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.facts-icons-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 40px 36px;
+}
+
+.card-title {
+    color: #424242;
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.card-description {
+    color: #727272;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+/* facts section responsive */
+@media screen and (max-width: 576px) {
+    .facts-icons-container {
+        flex-direction: column;
+    }
+
+    .facts-header {
+        text-align: center;
+    }
+
+    .card {
+        margin-top: 20px;
+    }
+
+    .card-description {
+        margin-top: 10px;
+    }
+
+}
+
+/* medium Devices */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+
+    .facts-icons-container{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+}
+    .facts-header {
+        text-align: center;
+    }
+    
+}
